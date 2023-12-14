@@ -1,8 +1,8 @@
 import random
 
-print("****************************\nPlain and simple password generator\n****************************")
+print("\n****************************\nPlain and simple password generator\n****************************")
 
-char_qty = int(input("How many characters do you want? "))
+char_qty = int(input("How many characters do you want to be in the password? "))
 
 chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
         "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
@@ -16,7 +16,7 @@ pw = []
 pw_str = str("")
 
 
-for i in range (0, 5):
+for i in range (0, 10):
     pw_str = ""
     pw = []
     for i in range (char_qty):
@@ -28,6 +28,3 @@ for i in range (0, 5):
 
     print("\n{}".format(pw_str))
 
-qty = len(chars) ** char_qty
-
-print("\nWith these simple limitations, there's\n{} different variations for the password.".format(qty))
